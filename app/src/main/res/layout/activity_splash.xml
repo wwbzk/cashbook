@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first" ><!-- 将布局背景设置成欢迎图片 -->
+
+    <!-- TextView控件用于显示版本号信息-->
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="35dp"/>
+    <!--android:layout_centerInParent="true"属性将TextView置于父控件的中心位置-->
+
+</RelativeLayout>

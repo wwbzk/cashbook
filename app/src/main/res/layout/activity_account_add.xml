@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <include layout="@layout/main_title_bar"/>
+
+    <EditText
+        android:id="@+id/et_acc_money"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/shape_wihte_frame"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:hint="请输入收支费用"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="20sp"/>
+    <Spinner
+        android:id="@+id/spinner_acc_type"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/account_Type"
+        android:background="@drawable/shape_wihte_frame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <Spinner
+        android:id="@+id/spinner_accPay_type"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/acc_spinner_values"
+        android:background="@drawable/shape_wihte_frame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+<!--  循环读取资产的数值 并赋值到下面 -->
+    <Spinner
+        android:id="@+id/spinner_acc_assName"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/assets_spinner_values"
+        android:background="@drawable/shape_wihte_frame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <EditText
+        android:id="@+id/et_acc_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/shape_wihte_frame"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:hint="@string/et_ass_remarks"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_acc_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/register_selector"
+        android:text="@string/btn_save"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"/>
+
+</LinearLayout>
